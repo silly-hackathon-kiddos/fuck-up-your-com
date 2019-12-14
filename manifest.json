@@ -22,7 +22,7 @@
   "content_scripts": [{
     "matches": ["*://*/*"],
     "css": ["css/styles.css"],
-    "js": ["js/fuckup.js"],
+    "js": ["js/fuckup.js","js/aLtCaPs.js"],
     "run_at": "document_end"
   }]
 }
