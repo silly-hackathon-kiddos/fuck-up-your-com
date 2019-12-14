@@ -2,6 +2,8 @@
 // document.getElementsByTagName("BODY")[0].style.pointerEvents = "all";
 let links = document.getElementsByTagName("a");
 let inputs = document.getElementsByTagName("input");
+let text = document.getElementsByTagName("div");
+
 // change text to altcaps 
 console.log(inputs);
 for(let i = 0; i < links.length; i++){
@@ -15,4 +17,14 @@ for(let i = 0; i < links.length; i++){
   links[i].innerText = swapCase();
   //links[i].innerText = 'NoOoOoOo  '
 }
+
+for(let i = 0; i < text.length; i++){
+  function swapCase(ptext=text[i].innerText) {
+    return ptext.split('').map((c,i) => 
+        i % 2 == 0 ? c.toLowerCase() : c.toUpperCase()
+    ).join('');   
+  }
+  text[i].innerText = swapCase();
+}
+
 console.log("loaded");
