@@ -10,10 +10,6 @@ const destroy = () => {
 
 const gotMessage = (message, sender, sendResponse) => {
   console.log(message);
-  if (message === "DESTROY") {
-    destroy();
-  } else {
-    console.log("NO DESTROY");
-  }
+  destroy();
 }
 chrome.runtime.onMessage.addListener(gotMessage);
