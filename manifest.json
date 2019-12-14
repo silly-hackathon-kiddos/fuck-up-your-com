@@ -2,5 +2,21 @@
   "name": "fuck up your com",
   "version": "1.0",
   "description": "!!! DIE MONKEY DIE !!!",
-  "manifest_version": 2
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "72": "images/icon-72x72.png",
+      "96": "images/icon-96x96.png",
+      "128": "images/icon-128x128.png",
+      "144": "images/icon-144x144.png"
+    }
+  },
+  "icons": {
+    "72": "images/icon-72x72.png",
+    "96": "images/icon-96x96.png",
+    "128": "images/icon-128x128.png",
+    "144": "images/icon-144x144.png"
+  },
+  "permissions": ["storage"]
 }
