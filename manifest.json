@@ -24,5 +24,9 @@
     "css": ["css/styles.css"],
     "js": ["js/fuckup.js"],
     "run_at": "document_end"
-  }]
+  }],
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  }
 }
