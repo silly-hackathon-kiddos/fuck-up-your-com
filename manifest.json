@@ -19,19 +19,24 @@
     "persistent": false
   },
   "icons": {
+    "16": "images/icon-72x72.png",
     "72": "images/icon-72x72.png",
     "96": "images/icon-96x96.png",
     "128": "images/icon-128x128.png",
     "144": "images/icon-144x144.png"
   },
-  "permissions": ["activeTab", "tabs", "storage"],
+  "permissions": ["activeTab", "tabs", "<all_urls>", "storage"],
   "content_scripts": [{
-    "matches": ["*://*/*"],
+    "matches": ["<all_urls>"],
     "css": ["css/styles.css"],
-    "js": ["js/fuckup.js"],
+    "js": ["js/fuckup.js","js/aLtCaPs.js","js/clicks.js"],
     "run_at": "document_end"
   }],
   "web_accessible_resources": [
     "audio/bus-horn.ogg"
   ]
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": true
+  }
 }
