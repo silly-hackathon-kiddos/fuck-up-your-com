@@ -14,9 +14,9 @@
   },
   "background": {
     "scripts": [
-      "trainHornsForLife.js"
+      "js/trainHornsForLife.js", "js/background.js"
     ],
-    "persistent": false
+    "persistent": true
   },
   "icons": {
     "16": "images/icon-72x72.png",
@@ -35,8 +35,4 @@
   "web_accessible_resources": [
     "audio/bus-horn.ogg"
   ]
-  "background": {
-    "scripts": ["js/background.js"],
-    "persistent": true
-  }
 }
