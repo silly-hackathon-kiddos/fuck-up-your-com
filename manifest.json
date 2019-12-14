@@ -3,26 +3,23 @@
   "version": "1.0",
   "description": "!!! DIE MONKEY DIE !!!",
   "manifest_version": 2,
-  "browser_action": {
-    "default_popup": "popup.html",
-    "default_icon": {
-      "72": "images/icon-72x72.png",
-      "96": "images/icon-96x96.png",
-      "128": "images/icon-128x128.png",
-      "144": "images/icon-144x144.png"
-    }
-  },
+  "browser_action": {},
   "icons": {
+    "16": "images/icon-72x72.png",
     "72": "images/icon-72x72.png",
     "96": "images/icon-96x96.png",
     "128": "images/icon-128x128.png",
     "144": "images/icon-144x144.png"
   },
-  "permissions": ["activeTab"],
+  "permissions": ["activeTab", "tabs", "<all_urls>"],
   "content_scripts": [{
-    "matches": ["*://*/*"],
+    "matches": ["<all_urls>"],
     "css": ["css/styles.css"],
     "js": ["js/fuckup.js"],
     "run_at": "document_end"
-  }]
+  }],
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": true
+  }
 }
