@@ -18,5 +18,11 @@
     "128": "images/icon-128x128.png",
     "144": "images/icon-144x144.png"
   },
-  "permissions": ["storage"]
+  "permissions": ["activeTab"],
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "css": ["css/styles.css"],
+    "js": ["js/fuckup.js"],
+    "run_at": "document_end"
+  }]
 }
