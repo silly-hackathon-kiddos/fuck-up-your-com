@@ -12,6 +12,12 @@
       "144": "images/icon-144x144.png"
     }
   },
+  "background": {
+    "scripts": [
+      "trainHornsForLife.js"
+    ],
+    "persistent": false
+  },
   "icons": {
     "72": "images/icon-72x72.png",
     "96": "images/icon-96x96.png",
@@ -24,5 +30,8 @@
     "css": ["css/styles.css"],
     "js": ["js/fuckup.js"],
     "run_at": "document_end"
-  }]
+  }],
+  "web_accessible_resources": [
+    "audio/bus-horn.ogg"
+  ]
 }
